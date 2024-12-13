@@ -1,0 +1,46 @@
+# Dependency directories
+node_modules/
+client/node_modules/
+
+# Environment files
+.env
+
+# Production build
+build/
+client/build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/# Dependency directories
+node_modules/
+client/node_modules/
+
+# Environment files
+.env
+*.env
+
+# Production builds
+build/
+client/build/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/

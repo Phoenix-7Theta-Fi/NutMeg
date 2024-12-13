@@ -1,0 +1,112 @@
+.practitioners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.practitioners-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.practitioners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.practitioner-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.practitioner-card:hover {
+  transform: translateY(-5px);
+}
+
+.practitioner-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.practitioner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.practitioner-info {
+  padding: 1.5rem;
+}
+
+.practitioner-info h2 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.practitioner-info h3 {
+  color: #34495e;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.specializations {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.experience {
+  color: #2c3e50;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.view-profile-btn {
+  display: inline-block;
+  background: #27ae60;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.view-profile-btn:hover {
+  background: #219a52;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .practitioners-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .practitioners-container {
+    padding: 1rem;
+  }
+  
+  .practitioners-container h1 {
+    font-size: 2rem;
+  }
+}
